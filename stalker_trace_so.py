@@ -24,7 +24,6 @@ class stalker_trace_so(plugin_t):
         
         func_addr = []
         func_name = []
-        #filter_string = input("输入你需要过滤的特征串： ")
         filter_string = ida_kernwin.ask_str("Default value", 0, "输入你需要过滤的特征串：")
         print("filter_string：",filter_string)
         for func_ea in idautils.Functions():
