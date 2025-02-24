@@ -1,12 +1,10 @@
 # 一键生成native层trace脚本
 # 1.使用方法
-将```stalker_trace_so.py```复制到```[IDA安装目录]\plugins```
+1.1 将```stalker_trace_so.py```复制到```[IDA安装目录]\plugins```
 
-在IDA中选择```Edit->Plugins->stalker_trace_so```，将会在so所在的目录下自动生成```trace_xxx.js```
+1.2 在IDA中选择  ```Edit->Plugins->stalker_trace_so```，将会在so所在的目录下自动生成```trace_xxx.js```
 
-frida运行脚本
-
-```frida -U -l trace_xxx.js -f [package name]```
+1.3 frida运行脚本  ```frida -U -l trace_xxx.js -f [package name]```
 
 # 2.小修改
 可对带有指定字符的函数名进行hook，可以一键生成对指定函数hook的初步脚本
